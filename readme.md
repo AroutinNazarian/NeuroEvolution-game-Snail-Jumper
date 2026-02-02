@@ -41,10 +41,10 @@ Snail Jumper demonstrates neuroevolution in action: AI agents evolve jumping beh
 
 ## Key Features
 
-✓ Adaptive learning through evolutionary pressure  
-✓ Configurable mutation rates and network architecture  
-✓ Real-time performance tracking and visualization  
-✓ Modular design separating NN, evolution, and game logic  
+ Adaptive learning through evolutionary pressure  
+ Configurable mutation rates and network architecture  
+ Real-time performance tracking and visualization  
+ Modular design separating NN, evolution, and game logic  
 
 ---
 
