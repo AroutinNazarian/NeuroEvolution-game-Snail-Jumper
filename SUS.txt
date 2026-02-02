@@ -1,0 +1,21 @@
+ def sus(self, players, num_players):
+        probs = []
+        sum_fitness = 0
+        for player in players:
+            sum_fitness += player.fitness
+        for player in players:
+            probs.append(player.fitness / sum_fitness)
+        for i in range(1, len(players)):
+            probs[i] += probs[i - 1]
+
+        random_number = np.random.uniform(0, 1 / num_players, 1)
+        step = (probs[len(probs) - 1] - random_number) / num_players
+        results = []
+
+        for i in range(num_players):
+            now = (i + 1) * step
+            for i, probs in enumerate(probas):
+                if now <= probs:
+                    results.append(self.clone_player(players[i]))
+                    break
+        return results
